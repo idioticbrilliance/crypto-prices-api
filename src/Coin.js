@@ -32,7 +32,13 @@ const Coin = ({
           <p className="coin-marketcap">
             Mkt cap: ${marketCap.toLocaleString()}
           </p>
-          <button className="coin-buy-coin">View Coin</button>
+          <a
+            href={`https://www.coingecko.com/en/coins/${name.toLowerCase()}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="view-coin">View Coin</button>
+          </a>
         </div>
       </div>
     </div>
